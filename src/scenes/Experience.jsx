@@ -79,7 +79,22 @@ const Intern = () => {
     </section>
   );
 };
-
+const InternBrave = () => {
+  return (
+    <section className="mt-3 font-playfair">
+      <p className="mt-1 mb-1 text-yellow text-2xl">BraveSpaces</p>
+      <p className="mt-1 mb-6 text-red text-2xl">Software Engineer Intern</p>
+      <li className="pb-2">
+        {" "}
+        Designed and developed a data-driven application aimed at enhancing workplace Diversity, Equity, and Inclusion through comprehensive statical analysis, AI-driven recommendations, and progress tracking.
+        Increased feature engagement by 25% through market analysis and user feedback.
+      </li>
+      <li className="pb-2">
+        Leveraged Amazon Web Services (AWS) to construct serverless web applications, harnessing key AWS components such as S3, DynamoDB, Lambda, Cognito, and API Gateway to optimize functionality and performance.
+      </li>
+    </section>
+  );
+};
 const Experience = () => {
   const [index, setIndex] = React.useState(0);
 
@@ -121,12 +136,14 @@ const Experience = () => {
           indicatorColor="secondary"
         >
           <Tab label="Senior Software Engineer"></Tab>
+          <Tab label="Software Engineer Intern"></Tab>
           <Tab label="Software Engineer"></Tab>
           <Tab label="Intern"></Tab>
         </Tabs>
-        {index == 0 && <SenorSoftwareEngineer />}
-        {index == 1 && <SoftwareEngineer />}
-        {index == 2 && <Intern />}
+        {index == 1 && <SenorSoftwareEngineer />}
+        {index == 2 && <SoftwareEngineer />}
+        {index == 3 && <Intern />}
+        {index == 0 && <InternBrave />}
       </section>
     </>
   );
