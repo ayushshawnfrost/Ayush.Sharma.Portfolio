@@ -91,6 +91,7 @@ const MySkills = () => {
             <li>.Net Core</li>
             <li>Express.js</li>
             <li>Next.js</li>
+            <li>Docker</li>
           </p>
         </motion.div>
         {/* IMAGINATIVE */}

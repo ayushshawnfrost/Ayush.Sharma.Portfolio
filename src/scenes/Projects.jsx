@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import proj1 from "../assets/1.png";
 import proj2 from "../assets/2.png";
 import proj3 from "../assets/3.PNG";
+import proj4 from "../assets/4.png";
 
 const container = {
   hidden: {},
@@ -35,6 +36,7 @@ const Project = ({ title, href, desc, img }) => {
         {img ==="3" &&<img src={proj3} alt={projectTitle} />}
         {img ==="1" &&<img src={proj1} alt={projectTitle} />}
         {img ==="2" &&<img src={proj2} alt={projectTitle} />}
+        {img === "4" && <img src={proj4} alt={projectTitle} />}
       </a>
     </motion.div>
   );
@@ -82,11 +84,17 @@ const Projects = () => {
           <Project title="Code Chronicles" href="http://ayush.sharma.s3-website.us-east-2.amazonaws.com/" desc="" img="3" />
           <div className="ml-3 mt-5 font-playfair">
             <p className="text-2xl font-playfair text-yellow pb-5">Code Chronicles(Serverless Full stack application)</p>
-            <li  className="pb-2">The CodeChroniclesAIBlog application is a full-stack web application built using React.js and AWS services.</li>
-            <li> The RESTful API, powered by AWS API Gateway and Lambda functions, handles article CRUD operations, while DynamoDB serves as the NoSQL database for storing article data. Authentication and authorization are implemented using AWS Cognito User Pools, ensuring secure access to the application. </li>
+            <li  className="pb-2">The CodeChroniclesAIBlog application is a full-stack web application built using React.js and AWS services. It allows users to publish and view articles on a dynamic blog platform. The front-end, developed with React.js, provides a user-friendly interface with two main pages: the home page, displaying all published articles, and the create page, featuring a form for users to submit their own articles. </li>
+            <li> The RESTful API, powered by AWS API Gateway and Lambda functions, handles article CRUD operations, while DynamoDB serves as the NoSQL database for storing article data. Authentication and authorization are implemented using AWS Cognito User Pools, ensuring secure access to the application.  </li>
+            <li> The deployment is done through AWS S3 for static hosting. With its scalable architecture and user-friendly features, the CodeChroniclesAIBlog application offers a seamless and secure blogging experience for users.  </li>
           </div>
-
-          <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/GetYourJab_2022/" desc="" img="1" />
+          <Project title="American Sign Language (ASL) recognition system" href="https://deeplearning-lab-csueb.github.io/ASL-webapp/" desc="" img="4" />
+          <div className="ml-3 mt-5 font-playfair">
+            <p className="text-2xl font-playfair text-yellow pb-5">American Sign Language (ASL) recognition system</p>
+            <li className="pb-2">Engineered a real-time American Sign Language (ASL) recognition system. Constructed a machine learning model with TensorFlow and TensorFlow.js to accurately recognize ASL signs from video frames.</li>
+            <li>Face, hand and pose landmark is detected by mediapipe holistic solution. Developed a web application in order to make this model more accessibly.</li>
+          </div>
+          {/* <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/GetYourJab_2022/" desc="" img="1" />
           <div className="ml-3 mt-5 font-playfair">
             <p className="text-2xl font-playfair text-yellow pb-5">Get Your Jab</p>
             <li className="pb-2">Developed a client-side web application that gives information on Covid-19 vaccination centers and slots availability throughout India.</li>
@@ -97,7 +105,7 @@ const Projects = () => {
             <p className="text-2xl font-playfair text-yellow pb-5">Covid-19 Dashboard (India)</p>
             <li className="pb-2">Covid-19 dashboard for India. Shows the number of Active Cases, Confirmed Cases, Deceased, Migrated, Recovered cases state wise.</li>
             <li>The application consumes data from Public APIs.</li>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>
