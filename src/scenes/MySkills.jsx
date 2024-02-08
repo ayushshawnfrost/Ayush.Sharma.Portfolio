@@ -52,6 +52,7 @@ const MySkills = () => {
           </div>
           <p className="mt-5 font-playfair">
             <li>ReactJS</li>
+            <li>Spring Boot</li>
             <li>NodeJS</li>
             <li>Angular</li>
             <li>Java</li>
@@ -84,7 +85,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32  bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5 font-playfair">
-            <li>Spring Boot</li>
+            
             <li>MongoDB</li>
             <li>MySQL</li>
             <li>Python</li>

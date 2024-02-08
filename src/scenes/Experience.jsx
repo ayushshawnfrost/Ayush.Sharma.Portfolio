@@ -12,25 +12,20 @@ const SenorSoftwareEngineer = () => {
       <p className="mt-1 mb-6 text-red text-2xl">Senior Software Engineer</p>
       <li className="pb-2">
         {" "}
-        developed UI components using Redux, Typescript, SASS, and drafted unit
-        tests using Jest with 90% code coverage. Rest APIs written in.Net Core
-        in accordance with the microservice architecture
+        Successfully Orchestrated login/registration via Google accounts using Spring Boot, Spring Security, OAuth2.0, JPA, PostgreSQL, which notably amplified the influx of users from various domains. Deployed RESTful APIs adhering to a distributed microservices architecture.
       </li>
       <li className="pb-2">
-        applied optimization techniques to reduce load times by 20%, thereby
-        enhancing the user experience
+        Leveraged React, Redux, Thunk, TypeScript, to deliver high-quality UI components. Worked on triggering client-specific emails for various flows (registration, forgot password, login) using Kafka queues, significantly enhancing the user experience.
       </li>
       <li className="pb-2">
-        decreased bugs by 10% by offering recommendations for Redux.js for
-        better troubleshooting support. contributed to the project within Agile
-        Scrum project management environments.
+        Implemented Spring Boot caching using Redis effectively, decreasing database load by a substantial 30%. Ensured application quality by developing comprehensive JUnit test cases, enhancing test coverage by 30%. Utilized Docker, Kubernetes and Jenkins for efficient CI/CD.
       </li>
-      <li className="pb-2">
+      {/* <li className="pb-2">
         {" "}
         Independently implemented application-wide localization through i18n,
         enabled the application to be translated into three languages,
         increasing the application's reach internationally by 30%.
-      </li>
+      </li> */}
     </section>
   );
 };
@@ -40,22 +35,17 @@ const SoftwareEngineer = () => {
       <p className="mt-1 mb-1 text-yellow text-2xl">Valuelabs LLP</p>
       <p className="mt-1 mb-6 text-red text-2xl">Software Engineer</p>
       <li className="pb-2">
-        worked on a web-based solution for report generation and visualization
-        for auto body. My team was responsible for migrating the existing
-        Angular front-end application into React.js
+        Engineered cutting-edge analytical web applications for the insurance auto physical damage industry. Collaborated in cross-functional teams of varying sizes, utilizing React, Redux, TypeScript, C#, .NET Core, and Angular to deliver UI components.
       </li>
-      <li className="pb-2">
+      {/* <li className="pb-2">
         Implemented 4 primary UI components, including metric selection,
         hierarchy generation, and crosstab report.
+      </li> */}
+      <li className="pb-2">
+        Architected RESTful APIs conforming to microservice architecture, leveraging .NET Core for CRUD operations on the database. Implemented unit tests using Jest, ensuring code quality, and minimizing bugs in the testing phase.
       </li>
       <li className="pb-2">
-        Worked in a team of five members. Created React components with
-        TypeScript. performed unit testing, designed visualization charts using
-        Chartist.js and developed REST APIs using .Net Core.
-      </li>
-      <li className="pb-2">
-        Took the initiative for peer code reviews, which minimized bugs reported
-        in the testing phase by 25%
+        Led initiatives such as application-wide localization through i18n, expanding the application's international reach by 20%. Conducted peer code reviews, improving overall code quality, and reducing the number of reported bugs. Practiced Agile (Scrum) methodology.
       </li>
     </section>
   );
@@ -86,11 +76,13 @@ const InternBrave = () => {
       <p className="mt-1 mb-6 text-red text-2xl">Software Engineer Intern</p>
       <li className="pb-2">
         {" "}
-        Designed and developed a data-driven application aimed at enhancing workplace Diversity, Equity, and Inclusion through comprehensive statical analysis, AI-driven recommendations, and progress tracking.
-        Increased feature engagement by 25% through market analysis and user feedback.
+        Employed AWS S3, Cognito, API Gateway, Lambda, NodeJS and ExpressJS to architect serverless web applications, achieving a 40% cost reduction over traditional server-based setups. Orchestrated token-based authentication via Cognito user pool.
       </li>
       <li className="pb-2">
-        Leveraged Amazon Web Services (AWS) to construct serverless web applications, harnessing key AWS components such as S3, DynamoDB, Lambda, Cognito, and API Gateway to optimize functionality and performance.
+        Ensured scalability, high availability, and data durability using AWS RDS with PostgreSQL, incorporating automated backups and multi-AZ deployment. Leveraged ElastiCache for caching frequently accessed data, optimizing application performance and reducing database load.
+      </li>
+      <li className="pb-2">
+        Developed the application's front-end using ReactJS, featuring over 20 interactive components, including charts and forms. Efficiently managed state using Context API, resulting in a 30% reduction in unnecessary renders.
       </li>
     </section>
   );
@@ -135,10 +127,10 @@ const Experience = () => {
           variant="fullWidth"
           indicatorColor="secondary"
         >
-          <Tab label="Senior Software Engineer"></Tab>
           <Tab label="Software Engineer Intern"></Tab>
+          <Tab label="Senior Software Engineer"></Tab>
           <Tab label="Software Engineer"></Tab>
-          <Tab label="Intern"></Tab>
+          <Tab label="Software Engineer Intern"></Tab>
         </Tabs>
         {index == 1 && <SenorSoftwareEngineer />}
         {index == 2 && <SoftwareEngineer />}
