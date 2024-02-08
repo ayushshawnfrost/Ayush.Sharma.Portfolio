@@ -59,7 +59,7 @@ const MySkills = () => {
             <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
-            <li>AWS (S3, Lambda, EC2, API Gateway, Dynamo DB)</li>
+            <li>AWS (S3, Lambda, EC2, API Gateway, Dynamo DB, RDS)</li>
           </p>
         </motion.div>
 
@@ -86,7 +86,11 @@ const MySkills = () => {
           </div>
           <p className="mt-5 font-playfair">
             
-            <li>MongoDB</li>
+            <li>Apache Kafka</li>
+            <li>Redis</li>
+            <li>JPA</li>
+            <li>JUNIT</li>
+            <li>PostgreSQL</li>
             <li>MySQL</li>
             <li>Python</li>
             <li>C#</li>
